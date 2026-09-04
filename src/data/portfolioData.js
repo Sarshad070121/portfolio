@@ -7,6 +7,7 @@ export const personalInfo = {
   email: "shaikharshad0121@gmail.com",
   linkedin: "https://www.linkedin.com/in/arshadshaikh-ds/",
   github: "https://github.com/Sarshad070121",
+  medium: "https://medium.com/@shaikharshad0121",
   summary: "Data Engineer with expertise in building scalable distributed ETL pipelines, data warehousing, and big data architectures using PySpark, SQL, Python, Apache Spark, AWS, and Snowflake. Experienced in processing complex datasets, workflow automation, and delivering high-quality analytical infrastructure to support strategic decision-making."
 };
 
@@ -88,6 +89,18 @@ export const projectsData = [
     highlights: [
       "Engineered an end-to-end PySpark data pipeline for high-volume order telemetry processing.",
       "Applied Explainable AI (XAI) techniques to translate model predictions into actionable business recommendations."
+    ]
+  },
+  {
+    id: "indian-banking-pyspark-etl",
+    title: "Indian Banking Transactions PySpark ETL Pipeline",
+    badge: "⚡ Distributed PySpark ETL",
+    tags: ["PySpark", "Apache Spark", "SQL", "ETL Pipeline", "Data Engineering", "Banking"],
+    githubUrl: "https://github.com/Sarshad070121/Indian-Banking-Transactions-PySpark-ETL",
+    summary: "Architected a scalable PySpark ETL data pipeline processing high-volume Indian banking transaction records, automating data validation, transformations, and analytical schema generation.",
+    highlights: [
+      "Engineered distributed PySpark ETL workflows to ingest, clean, and enrich complex financial transaction telemetry.",
+      "Implemented automated schema validation, missing data imputation, and partition management for high-throughput querying."
     ]
   },
   {

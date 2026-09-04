@@ -63,6 +63,7 @@
       email: "shaikharshad0121@gmail.com",
       linkedin: "https://www.linkedin.com/in/arshadshaikh-ds/",
       github: "https://github.com/Sarshad070121",
+      medium: "https://medium.com/@shaikharshad0121",
       summary: "Data Engineer with expertise in building scalable distributed ETL pipelines, data warehousing, and big data architectures using PySpark, SQL, Python, Apache Spark, AWS, and Snowflake. Experienced in processing complex datasets, workflow automation, and delivering high-quality analytical infrastructure to support strategic decision-making."
     };
 
@@ -143,6 +144,17 @@
         highlights: [
           "Engineered an end-to-end PySpark data pipeline for high-volume order telemetry processing.",
           "Applied Explainable AI (XAI) techniques to translate model predictions into actionable business recommendations."
+        ]
+      },
+      {
+        title: "Indian Banking Transactions PySpark ETL Pipeline",
+        badge: "⚡ Distributed PySpark ETL",
+        tags: ["PySpark", "Apache Spark", "SQL", "ETL Pipeline", "Data Engineering", "Banking"],
+        githubUrl: "https://github.com/Sarshad070121/Indian-Banking-Transactions-PySpark-ETL",
+        summary: "Architected a scalable PySpark ETL data pipeline processing high-volume Indian banking transaction records, automating data validation, transformations, and analytical schema generation.",
+        highlights: [
+          "Engineered distributed PySpark ETL workflows to ingest, clean, and enrich complex financial transaction telemetry.",
+          "Implemented automated schema validation, missing data imputation, and partition management for high-throughput querying."
         ]
       },
       {
@@ -278,7 +290,7 @@
             </p>
           </section>
 
-          {/* 2. Work Experience Section (Mobile-Optimized Padding & Alignment) */}
+          {/* 2. Work Experience Section */}
           <section id="experience" className="py-14 sm:py-20 bg-white border-y border-slate-200">
             <div className="max-w-4xl mx-auto px-4 space-y-10 sm:space-y-12">
               <div className="text-center space-y-2">
@@ -364,7 +376,7 @@
             </div>
           </section>
 
-          {/* 5. Projects Section (ALL Project Cards Highlighted & Mobile Responsive) */}
+          {/* 5. Projects Section (2nd Project is Indian Banking Transactions PySpark ETL) */}
           <section id="projects" className="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
             <div className="max-w-6xl mx-auto px-4 space-y-10 sm:space-y-12">
               <div className="text-center space-y-2">
@@ -422,7 +434,7 @@
             </div>
           </section>
 
-          {/* 6. Sleek Dark Card Contact Section (Mobile Responsive) */}
+          {/* 6. Contact Section (With LinkedIn, GitHub, Medium, Email) */}
           <footer id="contact" className="py-14 sm:py-20 bg-slate-900 text-slate-300 relative overflow-hidden">
             <div className="max-w-4xl mx-auto px-4 text-center space-y-6 sm:space-y-8 relative z-10">
               
@@ -432,12 +444,15 @@
                   Open for Data Engineering opportunities and technical discussions.
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
+                <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 pt-2">
                   <a href={personalInfo.linkedin} target="_blank" className="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-blue-600 text-white font-bold text-sm shadow-lg hover:bg-blue-500">
                     LinkedIn Profile
                   </a>
                   <a href={personalInfo.github} target="_blank" className="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-slate-900 text-white font-bold text-sm border border-slate-700 hover:bg-slate-950">
                     GitHub Profile
+                  </a>
+                  <a href={personalInfo.medium} target="_blank" className="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-emerald-600 text-white font-bold text-sm shadow-lg hover:bg-emerald-500">
+                    Medium Profile
                   </a>
                   <button onClick={handleCopyEmail} className="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-slate-900 border border-slate-700 text-cyan-300 font-bold text-sm hover:border-cyan-400">
                     {copied ? 'Email Copied!' : personalInfo.email}

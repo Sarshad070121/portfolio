@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin, Github, ArrowUp, Check } from 'lucide-react';
+import { Mail, Linkedin, Github, ArrowUp, Check, BookOpen } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const FooterContact = () => {
@@ -34,8 +34,8 @@ const FooterContact = () => {
             Open for Data Engineering opportunities and technical discussions.
           </p>
 
-          {/* Action CTAs (Mobile Responsive Full-Width Buttons) */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 pt-2">
+          {/* Action CTAs: LinkedIn, GitHub, Medium, Email */}
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4 pt-2">
             
             <a
               href={personalInfo.linkedin}
@@ -55,6 +55,16 @@ const FooterContact = () => {
             >
               <Github className="w-5 h-5" />
               <span>GitHub Profile</span>
+            </a>
+
+            <a
+              href={personalInfo.medium}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto flex items-center justify-center gap-2.5 px-6 py-3.5 sm:px-7 sm:py-4 rounded-xl sm:rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all shadow-lg shadow-emerald-600/20 hover:-translate-y-1"
+            >
+              <BookOpen className="w-5 h-5" />
+              <span>Medium Profile</span>
             </a>
 
             <button
