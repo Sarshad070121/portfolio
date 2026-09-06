@@ -104,6 +104,18 @@ export const projectsData = [
     ]
   },
   {
+    id: "ecommerce-pyspark-etl",
+    title: "E-Commerce PySpark Distributed ETL & Telemetry Pipeline",
+    badge: "⚡ PySpark E-Commerce ETL",
+    tags: ["PySpark", "Apache Spark", "SQL", "ETL Pipeline", "E-Commerce", "Data Engineering"],
+    githubUrl: "https://github.com/Sarshad070121/Ecommerce-PySpark-ETL",
+    summary: "Engineered a distributed PySpark ETL pipeline processing high-volume e-commerce order telemetry, product catalog data, and user interaction logs to automate analytical data mart generation.",
+    highlights: [
+      "Built scalable PySpark ETL workflows for large-scale e-commerce transaction processing and customer behavioral analytics.",
+      "Implemented automated data quality validation checks, schema evolution handling, and Parquet partition optimization."
+    ]
+  },
+  {
     id: "car-ride-big-data",
     title: "Data Capture and Analysis of Car Ride",
     badge: "🚀 Big Data Architecture Project",
