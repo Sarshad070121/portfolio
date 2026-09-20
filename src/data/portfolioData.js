@@ -116,6 +116,18 @@ export const projectsData = [
     ]
   },
   {
+    id: "logistics-operations-databricks",
+    title: "Logistics Operations Big Data Analytics on Databricks",
+    badge: "⚡ Databricks & PySpark",
+    tags: ["Databricks", "PySpark", "Apache Spark", "Delta Lake", "Logistics Analytics", "Data Engineering"],
+    githubUrl: "https://github.com/Sarshad070121/Logistics-Operations-Databricks",
+    summary: "Built an end-to-end logistics operations data analytics platform on Databricks using PySpark and Delta Lake, processing complex supply chain telemetry, shipment tracking logs, and delivery route performance data.",
+    highlights: [
+      "Implemented Databricks PySpark data engineering pipelines to analyze fleet telemetry, delay factors, and route efficiency.",
+      "Leveraged Delta Lake ACID transactions and optimized Spark queries for fast operational reporting and logistics KPI tracking."
+    ]
+  },
+  {
     id: "car-ride-big-data",
     title: "Data Capture and Analysis of Car Ride",
     badge: "🚀 Big Data Architecture Project",
