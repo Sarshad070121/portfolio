@@ -18,12 +18,15 @@ export const experienceData = [
     role: "Data Processing Executive (Data Analyst / Data Engineer)",
     period: "Aug 2023 – PRESENT",
     highlights: [
-      "Deliver 1,000+ international market research projects across the Nordics, Italy, France, Spain, Poland, Turkey, Egypt, and Greece, maintaining high data quality while meeting strict project deadlines.",
-      "Develop Python automation scripts using Pandas and NumPy, improving processing efficiency by 25% and reducing manual effort across high-volume survey and panel data workflows.",
-      "Process and validate multi-country datasets using Python, SPSS, and Excel, applying statistical validation, data transformation, and cleansing techniques to resolve complex data quality issues.",
-      "Established the standard processing workflow for the new Egypt Hub, covering demographic reporting, data cleaning, quality checks, and delivery formats to support consistent project execution.",
-      "Collaborated with international teams to translate client requirements into accurate deliverables, resolve workflow escalations, and maintain 100% CSAT across 500+ projects.",
-      "Mentored new team members and delivered training on processing standards, automation tools, and best practices. Recognized as Employee of the Month (November 2024) for process improvement and delivery quality."
+      "Processed 3,000–3,500 datasets across 1,000+ projects and 40+ global markets, using Python, SQL, SPSS, and Excel for data preparation, cleaning, validation, and quality checks.",
+      "Automated repetitive data-processing and transformation tasks using Python, Pandas, NumPy, and SQL, reducing processing time by approximately 50%.",
+      "Replaced manual SPSS data-merging workflows with Python automation, making recurring data preparation more consistent and repeatable.",
+      "Scheduled 4 recurring data-processing workflows using CRON, reducing manual execution and improving process repeatability.",
+      "Extracted and prepared data from Snowflake using SQL for downstream Crunch analysis and dashboard reporting.",
+      "Set up the Egypt Hub data-processing workflow, covering data cleaning, demographic reporting, validation, quality checks, and final delivery.",
+      "Handled approximately 300 multi-country projects involving 20K–30K records per project, maintaining data quality and meeting delivery timelines.",
+      "Delivered 470+ projects in FY 2025–26 and received the highest performance rating in two consecutive financial years.",
+      "Trained new team members and was recognized as Employee of the Month (November 2024)."
     ]
   },
   {
