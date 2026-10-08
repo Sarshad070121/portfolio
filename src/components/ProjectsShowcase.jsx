@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle2, ArrowUpRight } from 'lucide-react';
+import { CheckCircle2, ArrowUpRight, BookOpen } from 'lucide-react';
 import { projectsData } from '../data/portfolioData';
 
 const ProjectsShowcase = () => {
@@ -13,7 +13,7 @@ const ProjectsShowcase = () => {
             Projects
           </h2>
           <p className="text-slate-600 text-xs sm:text-base font-medium">
-            Featured Master's thesis research, distributed big data platforms, ETL pipelines, and predictive analytics projects.
+            Featured Master's thesis research, Azure cloud engineering, distributed big data platforms, and analytics pipelines.
           </p>
         </div>
 
@@ -22,11 +22,11 @@ const ProjectsShowcase = () => {
           {projectsData.map((project) => (
             <div
               key={project.id}
-              className="flex flex-col justify-between p-5 sm:p-8 rounded-2xl sm:rounded-3xl bg-blue-50/70 border border-blue-300 shadow-md ring-1 ring-blue-500/20 hover:shadow-lg hover:border-blue-400 transition-all group"
+              className="flex flex-col justify-between p-5 sm:p-8 rounded-2xl sm:rounded-3xl border bg-blue-50/70 border-blue-300 shadow-md ring-1 ring-blue-500/20 hover:shadow-lg transition-all group"
             >
-              <div className="space-y-4 sm:space-y-5 text-left">
+              <div className="space-y-3.5 sm:space-y-4 text-left">
                 
-                {/* Header & Title + Badge + GitHub SVG Icon */}
+                {/* Header & Title + Badge + Action Icon Buttons */}
                 <div className="flex items-start justify-between gap-3 sm:gap-4">
                   <div className="space-y-1.5 sm:space-y-2">
                     {project.badge && (
@@ -39,16 +39,29 @@ const ProjectsShowcase = () => {
                     </h3>
                   </div>
 
-                  {/* GitHub Icon Button */}
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 sm:p-2.5 rounded-xl bg-white border border-slate-300 text-slate-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all flex-shrink-0 shadow-2xs"
-                    title="View GitHub Repository"
-                  >
-                    <GithubIcon className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </a>
+                  {/* Icon Buttons (GitHub & optional Medium) */}
+                  <div className="flex items-center gap-1.5 flex-shrink-0">
+                    {project.mediumUrl && (
+                      <a
+                        href={project.mediumUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 sm:p-2.5 rounded-xl bg-white border border-slate-300 text-emerald-600 hover:bg-emerald-600 hover:text-white transition-all shadow-2xs"
+                        title="Read Medium Article"
+                      >
+                        <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
+                      </a>
+                    )}
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 sm:p-2.5 rounded-xl bg-white border border-slate-300 text-slate-700 hover:bg-blue-600 hover:text-white transition-all shadow-2xs"
+                      title="View GitHub Repository"
+                    >
+                      <GithubIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </a>
+                  </div>
                 </div>
 
                 {/* Project Summary */}
@@ -73,7 +86,7 @@ const ProjectsShowcase = () => {
 
               </div>
 
-              {/* Footer Tech Tags & GitHub Link */}
+              {/* Footer Tech Tags & Links */}
               <div className="pt-4 sm:pt-6 mt-4 sm:mt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-2.5 sm:gap-3">
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
                   {project.tags.map((tag, idx) => (
@@ -86,15 +99,28 @@ const ProjectsShowcase = () => {
                   ))}
                 </div>
 
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors"
-                >
-                  <span>View Repo</span>
-                  <ArrowUpRight className="w-3.5 h-3.5" />
-                </a>
+                <div className="flex items-center gap-3">
+                  {project.mediumUrl && (
+                    <a
+                      href={project.mediumUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs font-bold text-emerald-600 hover:text-emerald-800 transition-colors"
+                    >
+                      <span>Medium Article</span>
+                      <ArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-800 transition-colors"
+                  >
+                    <span>View Repo</span>
+                    <ArrowUpRight className="w-3.5 h-3.5" />
+                  </a>
+                </div>
               </div>
 
             </div>

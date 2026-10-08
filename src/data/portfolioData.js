@@ -8,7 +8,7 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/arshadshaikh-ds/",
   github: "https://github.com/Sarshad070121",
   medium: "https://medium.com/@shaikharshad0121",
-  summary: "Data Engineer with expertise in building scalable distributed ETL pipelines, data warehousing, and big data architectures using PySpark, SQL, Python, Apache Spark, AWS, and Snowflake. Experienced in processing complex datasets, workflow automation, and delivering high-quality analytical infrastructure to support strategic decision-making."
+  summary: "Data Engineer with expertise in building scalable distributed ETL pipelines, data warehousing, and big data architectures using PySpark, SQL, Python, Apache Spark, AWS, Azure, and Snowflake. Experienced in processing complex datasets, workflow automation, and delivering high-quality analytical infrastructure to support strategic decision-making."
 };
 
 export const experienceData = [
@@ -66,7 +66,7 @@ export const skillGroups = [
   },
   {
     category: "Data Engineering",
-    skills: ["ETL", "Data Modelling", "Data Validation", "Apache Spark", "AWS", "Snowflake"]
+    skills: ["ETL", "Data Modelling", "Data Validation", "Apache Spark", "AWS", "Azure", "Snowflake"]
   },
   {
     category: "BI & Analytics",
@@ -89,6 +89,19 @@ export const projectsData = [
     highlights: [
       "Engineered an end-to-end PySpark data pipeline for high-volume order telemetry processing.",
       "Applied Explainable AI (XAI) techniques to translate model predictions into actionable business recommendations."
+    ]
+  },
+  {
+    id: "adventure-works-azure-data-engineering",
+    title: "End-to-End Azure Data Engineering Pipeline (AdventureWorks)",
+    badge: "☁️ Azure Cloud Data Engineering",
+    tags: ["Azure Data Factory", "ADLS Gen2", "Databricks", "PySpark", "Azure Synapse", "Power BI"],
+    githubUrl: "https://github.com/Sarshad070121/Adventure-Works-Data-Engineering",
+    mediumUrl: "https://medium.com/@shaikharshad0121/building-an-end-to-end-azure-data-engineering-pipeline-with-adventureworks-c4b5fe72d13b",
+    summary: "Architected an end-to-end Azure enterprise data engineering pipeline implementing Medallion Architecture (Bronze, Silver, Gold) across Azure Data Factory, ADLS Gen2, Databricks, Azure Synapse Analytics, and Power BI.",
+    highlights: [
+      "Automated batch data ingestion via Azure Data Factory into ADLS Gen2, transforming raw data using Databricks PySpark into clean Gold layer tables.",
+      "Engineered dimensional star-schema models in Azure Synapse Analytics and configured automated report refreshes for executive Power BI dashboards."
     ]
   },
   {
